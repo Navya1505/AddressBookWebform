@@ -13,10 +13,10 @@ namespace AddressBook.Webforms
         {
 
         }
-        protected void Button_1Click(object sender,EventArgs e)
+        protected void Button1_Click(object sender,EventArgs e)
 
         {
-            Response.Redirect("RegisterContactForm");
+            Response.Redirect("RegisterContactForm.aspx");
         }
     }
 }

@@ -15,11 +15,11 @@ namespace AddressBook.Webforms
         {
 
         }
-        static string connectionString = ConfigurationManager.ConnectionStrings[""].ConnectionString;
+        static string connectionString = ConfigurationManager.ConnectionStrings["UserDBConnectionString"].ConnectionString;
         SqlConnection connection=new SqlConnection(connectionString);
         protected void Button2_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("", connection);
+            SqlCommand command = new SqlCommand("AdressformCredentials", connection);
             command.CommandType = System.Data.CommandType.StoredProcedure;
 
             command.Parameters.AddWithValue("@FirstName", TextBox1.Text);
@@ -28,7 +28,7 @@ namespace AddressBook.Webforms
             command.Parameters.AddWithValue("@City", TextBox4.Text);
             command.Parameters.AddWithValue("@State", DropDownList1.SelectedValue);
             command.Parameters.AddWithValue("@PinCode", TextBox5.Text);
-            command.Parameters.AddWithValue("@Phone", TextBox6.Text);
+            command.Parameters.AddWithValue("@PhoneNumber", TextBox6.Text);
             command.Parameters.AddWithValue("@Email",TextBox7.Text);    
             connection.Open();
             var datareader=command.ExecuteReader();
