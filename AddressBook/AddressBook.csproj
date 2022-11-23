@@ -125,6 +125,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="AddressBook.Master" />
+    <Content Include="StyleSheet\HomePage.css" />
+    <Content Include="StyleSheet\RegisterContactForm.css" />
     <Content Include="Webforms\HomePage.aspx" />
     <Content Include="Webforms\RegisterContactForm.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -235,6 +237,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
