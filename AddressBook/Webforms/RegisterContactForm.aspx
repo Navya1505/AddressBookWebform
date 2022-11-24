@@ -1,25 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AddressBook.Master" AutoEventWireup="true" CodeBehind="RegisterContactForm.aspx.cs" Inherits="AddressBook.Webforms.RegisterContactForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../StyleSheet/RegisterContactForm.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="sec1">
+    <div class="Header">
     <div>
         <h1>CONTACT FORM</h1>
     </div>
     <div>
         <asp:Label ID="Label1" runat="server" Text="FirstName"></asp:Label>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Width="564px" height="18px"></asp:TextBox>
     </div>
     <div>
         <asp:Label ID="Label2" runat="server" Text="LastName"></asp:Label>
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Width="564px" height="18px"></asp:TextBox>
     </div>
     <div>
         <asp:Label ID="Label3" runat="server" Text="Address"></asp:Label>
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" Width="564px" height="18px"></asp:TextBox>
     </div>
     <div>
         <asp:Label ID="Label4" runat="server" Text="City"></asp:Label>
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" Width="564px" height="18px"></asp:TextBox>
+    </div>
     </div>
     <div>
         <asp:Label ID="Label5" runat="server" Text="State"></asp:Label>
@@ -32,7 +37,7 @@
             <asp:ListItem Text="Maharastra" Value="Maharastra"></asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div>/
+    <div>
           <asp:Label ID="Label6" runat="server" Text="PinCode"></asp:Label>
         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
     </div>
@@ -52,4 +57,7 @@
     <div>
         <asp:Label ID="Label9" runat="server"></asp:Label>
     </div>
+        </div>
+         
+
 </asp:Content>
